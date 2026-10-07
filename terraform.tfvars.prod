@@ -1,0 +1,21 @@
+# Prod: больше памяти у api, SSD
+ssh_public_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIProdHomeworkPlaceholderKeyReplaceMe user@prod"
+
+vm_specification = {
+  web = {
+    cores     = 2
+    memory    = 2
+    disk_size = 20
+    boot_disk = "fd845dr9j4h2aaq1m6ko"
+  }
+  api = {
+    cores     = 2
+    memory    = 4
+    disk_size = 20
+    boot_disk = "fd845dr9j4h2aaq1m6ko"
+  }
+}
+
+extra_disk_names = ["logs", "backup"]
+extra_disk_type  = "network-ssd"
+extra_disk_size  = 40
