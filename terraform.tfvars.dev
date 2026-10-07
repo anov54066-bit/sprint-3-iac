@@ -1,5 +1,5 @@
 # Dev: меньше ресурсов, HDD
-ssh_public_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDevHomeworkPlaceholderKeyReplaceMe user@dev"
+ssh_public_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFy68FtJY4W2fCvXLkkPFOgb+9/YvgyqNcFv+SU0CfOZ user@dev"
 
 vm_specification = {
   web = {
