@@ -1,0 +1,21 @@
+# Dev: меньше ресурсов, HDD
+ssh_public_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFy68FtJY4W2fCvXLkkPFOgb+9/YvgyqNcFv+SU0CfOZ user@dev"
+
+vm_specification = {
+  web = {
+    cores     = 2
+    memory    = 2
+    disk_size = 10
+    boot_disk = "fd845dr9j4h2aaq1m6ko"
+  }
+  api = {
+    cores     = 2
+    memory    = 2
+    disk_size = 10
+    boot_disk = "fd845dr9j4h2aaq1m6ko"
+  }
+}
+
+extra_disk_names = ["logs", "backup"]
+extra_disk_type  = "network-hdd"
+extra_disk_size  = 20
